@@ -1,0 +1,9 @@
+<article>
+  <h1>Edit Book</h1>
+  <div>Title: {{book.title}}</div>
+  <div>Author: {{book.author}}</div>
+  <form action="{{url_for('edit', id=book.id)}}" method="post">
+    <input type="number" step="0.1" value="{{book.rating}}" name="rating" id="rating">
+    <input type="submit" value="Submit change">
+  </form>
+</article>
